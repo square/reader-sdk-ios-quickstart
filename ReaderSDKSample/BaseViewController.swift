@@ -17,8 +17,10 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    public lazy var buttonsStackView = makeStackView()
+    public lazy var buttonsStackView = makeButtonStackView()
     public lazy var squareLogoView = makeSquareLogoView()
+    public lazy var titleContainerLayoutGuide = UILayoutGuide()
+    public lazy var titleContainerStackView = makeTitleContainerStackView()
     public lazy var titleLabel = makeTitleLabel()
     public lazy var subtitleLabel = makeSubtitleLabel()
     
@@ -28,13 +30,14 @@ class BaseViewController: UIViewController {
         squareLogoView.widthAnchor.constraint(equalToConstant: 48),
         squareLogoView.heightAnchor.constraint(equalToConstant: 48),
         
-        titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        titleLabel.bottomAnchor.constraint(equalTo: view.centerYAnchor, constant: -5),
-        titleLabel.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
+        titleContainerLayoutGuide.topAnchor.constraint(equalTo: squareLogoView.bottomAnchor),
+        titleContainerLayoutGuide.bottomAnchor.constraint(equalTo: buttonsStackView.topAnchor),
+        titleContainerLayoutGuide.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        titleContainerLayoutGuide.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
         
-        subtitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        subtitleLabel.topAnchor.constraint(equalTo: view.centerYAnchor, constant: 5),
-        subtitleLabel.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
+        titleContainerStackView.centerYAnchor.constraint(equalTo: titleContainerLayoutGuide.centerYAnchor),
+        titleContainerStackView.centerXAnchor.constraint(equalTo: titleContainerLayoutGuide.centerXAnchor),
+        titleContainerStackView.widthAnchor.constraint(equalTo: titleContainerLayoutGuide.widthAnchor),
         
         buttonsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         buttonsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
@@ -48,8 +51,10 @@ class BaseViewController: UIViewController {
         view.addSubview(squareLogoView)
         
         // Add labels
-        view.addSubview(titleLabel)
-        view.addSubview(subtitleLabel)
+        view.addLayoutGuide(titleContainerLayoutGuide)
+        view.addSubview(titleContainerStackView)
+        titleContainerStackView.addArrangedSubview(titleLabel)
+        titleContainerStackView.addArrangedSubview(subtitleLabel)
         
         // Set background color and add the stack view
         view.backgroundColor = SampleApp.backgroundColor
@@ -65,13 +70,21 @@ class BaseViewController: UIViewController {
 
 // MARK: - UI
 extension BaseViewController {
-    private func makeStackView() -> UIStackView {
+    private func makeButtonStackView() -> UIStackView {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
         stackView.spacing = 16
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
+    }
+    
+    private func makeTitleContainerStackView() -> UIStackView {
+        let titleContainerStackView = UIStackView()
+        titleContainerStackView.axis = .vertical
+        titleContainerStackView.spacing = 10
+        titleContainerStackView.translatesAutoresizingMaskIntoConstraints = false
+        return titleContainerStackView
     }
     
     private func makeSquareLogoView() -> UIImageView {

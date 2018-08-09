@@ -4,7 +4,7 @@ Follow the Reader SDK [Quick Start Guide](https://docs.connect.squareup.com/paym
 
 ## License
 
-    Copyright 2017 Square, Inc.
+    Copyright 2018 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

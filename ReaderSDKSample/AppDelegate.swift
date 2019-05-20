@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Initialize Square Reader SDK
         SQRDReaderSDK.initialize(applicationLaunchOptions: launchOptions)
-        
+
         // Create a window and show it
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.backgroundColor = SampleApp.backgroundColor

@@ -50,17 +50,17 @@ final class AppViewController: UIViewController {
     @objc internal func updateScreen() {
         let permissionsGranted = PermissionsViewController.areRequiredPermissionsGranted
         let readerSDKAuthorized = SQRDReaderSDK.shared.isAuthorized
-        
+
         if !permissionsGranted {
             let permissionsViewController = PermissionsViewController()
             permissionsViewController.delegate = self
             show(viewController: permissionsViewController)
-            
+
         } else if !readerSDKAuthorized {
             let chooseAuthorizationMethodViewController = ChooseAuthorizationMethodViewController()
             chooseAuthorizationMethodViewController.delegate = self
             show(viewController: chooseAuthorizationMethodViewController)
-            
+
         } else {
             let payViewController = PayViewController()
             payViewController.delegate = self

@@ -18,8 +18,9 @@
 		03FF148020B8B7240085C8D1 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF147F20B8B7240085C8D1 /* Spinner.swift */; };
 		03FF148420BDBBFC0085C8D1 /* SquareLogoAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF148320BDBBFC0085C8D1 /* SquareLogoAnimationViewController.swift */; };
 		03FF148620BDD1680085C8D1 /* ChooseAuthorizationMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF148520BDD1680085C8D1 /* ChooseAuthorizationMethodViewController.swift */; };
-		03FF148D20BDEF510085C8D1 /* SquareReaderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FF148720BDEEE90085C8D1 /* SquareReaderSDK.framework */; };
-		03FF148E20BDEF510085C8D1 /* SquareReaderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03FF148720BDEEE90085C8D1 /* SquareReaderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E045807228DD57C00B3F5F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E045809228DD57C00B3F5F3 /* Localizable.strings */; };
+		2EE2A8F422933E1D006D5B6C /* SquareReaderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE2A8F322933E1D006D5B6C /* SquareReaderSDK.framework */; };
+		2EE2A8F522933E1D006D5B6C /* SquareReaderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE2A8F322933E1D006D5B6C /* SquareReaderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		403FAA6420A38CD900829AE4 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403FAA6320A38CD900829AE4 /* SampleApp.swift */; };
 		40BB4CA520A38735002D3C8E /* PermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4CA420A38735002D3C8E /* PermissionsViewController.swift */; };
 		40BBFA9020A21EAE00D3A5FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBFA8F20A21EAE00D3A5FF /* AppDelegate.swift */; };
@@ -36,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				03FF148E20BDEF510085C8D1 /* SquareReaderSDK.framework in Embed Frameworks */,
+				2EE2A8F522933E1D006D5B6C /* SquareReaderSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +57,12 @@
 		03FF147F20B8B7240085C8D1 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		03FF148320BDBBFC0085C8D1 /* SquareLogoAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareLogoAnimationViewController.swift; sourceTree = "<group>"; };
 		03FF148520BDD1680085C8D1 /* ChooseAuthorizationMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAuthorizationMethodViewController.swift; sourceTree = "<group>"; };
-		03FF148720BDEEE90085C8D1 /* SquareReaderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SquareReaderSDK.framework; sourceTree = "<group>"; };
+		2E045808228DD57C00B3F5F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E04580A228DD5E300B3F5F3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E04580B228DD5E300B3F5F3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2E68C42622932AAE002407A7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2E68C42722932AAE002407A7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2EE2A8F322933E1D006D5B6C /* SquareReaderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SquareReaderSDK.framework; sourceTree = "<group>"; };
 		403FAA6320A38CD900829AE4 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 		40BB4CA420A38735002D3C8E /* PermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsViewController.swift; sourceTree = "<group>"; };
 		40BBFA8C20A21EAE00D3A5FF /* ReaderSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FF148D20BDEF510085C8D1 /* SquareReaderSDK.framework in Frameworks */,
+				2EE2A8F422933E1D006D5B6C /* SquareReaderSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,7 @@
 				40BBFA9620A21EAE00D3A5FF /* Assets.xcassets */,
 				40BBFA9820A21EAE00D3A5FF /* LaunchScreen.storyboard */,
 				40BBFA9B20A21EAE00D3A5FF /* Info.plist */,
+				2E045809228DD57C00B3F5F3 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -127,7 +134,6 @@
 		201E1E1F133519C0F926D59B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03FF148720BDEEE90085C8D1 /* SquareReaderSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 		40BBFA8320A21EAE00D3A5FF = {
 			isa = PBXGroup;
 			children = (
+				2EE2A8F322933E1D006D5B6C /* SquareReaderSDK.framework */,
 				03129ABC20A605E000AEDF4E /* README.md */,
 				40BBFA8E20A21EAE00D3A5FF /* ReaderSDKSample */,
 				40BBFA8D20A21EAE00D3A5FF /* Products */,
@@ -209,6 +216,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
+				es,
 			);
 			mainGroup = 40BBFA8320A21EAE00D3A5FF;
 			productRefGroup = 40BBFA8D20A21EAE00D3A5FF /* Products */;
@@ -226,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40BBFA9A20A21EAE00D3A5FF /* LaunchScreen.storyboard in Resources */,
+				2E045807228DD57C00B3F5F3 /* Localizable.strings in Resources */,
 				40BBFA9720A21EAE00D3A5FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,10 +285,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2E045809228DD57C00B3F5F3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E045808228DD57C00B3F5F3 /* en */,
+				2E04580A228DD5E300B3F5F3 /* ja */,
+				2E68C42722932AAE002407A7 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		40BBFA9820A21EAE00D3A5FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				40BBFA9920A21EAE00D3A5FF /* Base */,
+				2E04580B228DD5E300B3F5F3 /* ja */,
+				2E68C42622932AAE002407A7 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -290,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -349,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

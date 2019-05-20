@@ -88,7 +88,20 @@ final class PayViewController: BaseViewController {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.currencyCode = authorizedLocation.currencyCode.isoCurrencyCode
-        return formatter.string(from: NSNumber(value: Float(amount) / Float(100)))!
+        return formatter.string(from: NSNumber(value: localize(amount: amount, currencyCode: authorizedLocation.currencyCode)))!
+    }
+
+    private func localize(amount: Int, currencyCode: SQRDCurrencyCode) -> Float {
+        let decimalPlaces: Float = {
+            switch currencyCode {
+            case .JPY:
+                return 0
+            default:
+                return 2
+            }
+        }()
+
+        return Float(amount) / powf(10, decimalPlaces)
     }
 }
 

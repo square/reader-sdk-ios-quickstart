@@ -18,6 +18,7 @@ import UIKit
 import CoreLocation
 import AVFoundation
 import SquareReaderSDK
+import Alamofire
 
 final class AppViewController: UIViewController {
     var currentViewController: UIViewController? {
@@ -109,9 +110,35 @@ extension AppViewController: QRAuthorizationViewControllerDelegate {
 
 extension AppViewController: ManualAuthorizationViewControllerDelegate {
     func manualAuthorizationViewController(_ manualAuthorizationViewController: ManualAuthorizationViewController, didFinishEnteringAuthorizationCode code: String) {
-        let authorizeViewController = AuthorizeViewController(authorizationCode: code)
-        authorizeViewController.delegate = self
-        show(viewController: authorizeViewController)
+
+        print("** Requesting mobile auth code from backend")
+
+        let headers = [
+            "Content-Type":"application/json",
+        ]
+
+        let accessToken: String? = <# REPLACE ME #>
+
+        let body: [String : Any] = [
+            "accessToken": accessToken
+        ]
+
+        Alamofire.request("https://copernicus-development.herokuapp.com/getMobileAuthCode", method: .post, parameters: body, encoding: JSONEncoding.default, headers: headers)
+             .validate(statusCode: 200..<300)
+             .responseJSON { response in
+                print("** result coming here: \(response)")
+
+                guard response.result.isSuccess else {
+                    return
+                }
+
+                let json = try! JSONSerialization.jsonObject(with: response.data!, options: [])
+                let code = (json as! [String: String])["auth_code"]!
+
+                let authorizeViewController = AuthorizeViewController(authorizationCode: code)
+                authorizeViewController.delegate = self
+                self.show(viewController: authorizeViewController)
+            }
     }
     
     func manualAuthorizationViewControllerDidCancel(_ manualAuthorizationViewController: ManualAuthorizationViewController) {

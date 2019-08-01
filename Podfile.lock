@@ -1,16 +1,316 @@
 PODS:
+  - Ably (1.1.9):
+    - KSCrashAblyFork (= 1.15.20-ably-1)
+    - MsgPackAblyFork (= 0.2.0-ably-1)
+    - SAMKeychain (= 1.5.3)
+    - SocketRocketAblyFork (= 0.5.2-ably-4)
+    - ULID (= 1.1.0)
   - Alamofire (4.8.2)
+  - AlamofireNetworkActivityLogger (2.4.0):
+    - Alamofire (~> 4.8)
+  - AppCenter (2.2.0):
+    - AppCenter/Analytics (= 2.2.0)
+    - AppCenter/Crashes (= 2.2.0)
+  - AppCenter/Analytics (2.2.0):
+    - AppCenter/Core
+  - AppCenter/Core (2.2.0)
+  - AppCenter/Crashes (2.2.0):
+    - AppCenter/Core
+  - AppCenter/Distribute (2.2.0):
+    - AppCenter/Core
+  - Blueprints (0.11.3)
+  - Bolts/Tasks (1.9.0)
+  - BubbleTransition (3.0.2)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - CurrencyText (2.0.4):
+    - CurrencyText/Formatter (= 2.0.4)
+  - CurrencyText/Formatter (2.0.4)
+  - Fabric (1.9.0)
+  - Firebase/Core (6.5.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.0.4)
+  - Firebase/CoreOnly (6.5.0):
+    - FirebaseCore (= 6.1.0)
+  - Firebase/Performance (6.5.0):
+    - Firebase/CoreOnly
+    - FirebasePerformance (~> 3.1.1)
+  - FirebaseABTesting (3.0.0):
+    - FirebaseCore (~> 6.0)
+    - Protobuf (~> 3.5)
+  - FirebaseAnalytics (6.0.4):
+    - FirebaseCore (~> 6.1)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleAppMeasurement (= 6.0.4)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (6.1.0):
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/Logger (~> 6.0)
+  - FirebaseInstanceID (4.2.2):
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/UserDefaults (~> 6.0)
+  - FirebasePerformance (3.1.1):
+    - FirebaseCore (~> 6.0)
+    - FirebaseInstanceID (~> 4.2)
+    - FirebaseRemoteConfig (~> 4.2)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/ISASwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.5)
+  - FirebaseRemoteConfig (4.2.1):
+    - FirebaseABTesting (~> 3.0)
+    - FirebaseCore (~> 6.1)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleUtilities/Environment (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - Protobuf (~> 3.5)
+  - GMStepper (2.2)
+  - GoogleAppMeasurement (6.0.4):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - GoogleToolboxForMac/Defines (2.2.1)
+  - GoogleToolboxForMac/Logger (2.2.1):
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+  - "GoogleToolboxForMac/NSData+zlib (2.2.1)":
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+  - GoogleUtilities/AppDelegateSwizzler (6.2.3):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.2.3)
+  - GoogleUtilities/ISASwizzler (6.2.3)
+  - GoogleUtilities/Logger (6.2.3):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.2.3):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.2.3):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.2.3)"
+  - GoogleUtilities/Reachability (6.2.3):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.2.3):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.2.2)
+  - Heap (6.1.0)
+  - Hero (1.4.0)
+  - IBAnimatable (6.0.0)
+  - JMMaskTextField-Swift (0.1.3)
+  - KSCrashAblyFork (1.15.20-ably-1):
+    - KSCrashAblyFork/Installations (= 1.15.20-ably-1)
+  - KSCrashAblyFork/Installations (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting
+  - KSCrashAblyFork/Recording (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording/Tools (= 1.15.20-ably-1)
+  - KSCrashAblyFork/Recording/Tools (1.15.20-ably-1)
+  - KSCrashAblyFork/Reporting (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/MessageUI (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Sinks (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Tools (= 1.15.20-ably-1)
+  - KSCrashAblyFork/Reporting/Filters (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Alert (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Filters/AppleFmt (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Filters/Base (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Filters/Basic (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Filters/GZip (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Filters/JSON (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Filters/Sets (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Filters/Stringify (= 1.15.20-ably-1)
+    - KSCrashAblyFork/Reporting/Filters/Tools (= 1.15.20-ably-1)
+  - KSCrashAblyFork/Reporting/Filters/Alert (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/AppleFmt (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/Base (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+  - KSCrashAblyFork/Reporting/Filters/Basic (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/GZip (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/JSON (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/Sets (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/AppleFmt
+    - KSCrashAblyFork/Reporting/Filters/Base
+    - KSCrashAblyFork/Reporting/Filters/Basic
+    - KSCrashAblyFork/Reporting/Filters/GZip
+    - KSCrashAblyFork/Reporting/Filters/JSON
+    - KSCrashAblyFork/Reporting/Filters/Stringify
+  - KSCrashAblyFork/Reporting/Filters/Stringify (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters/Base
+  - KSCrashAblyFork/Reporting/Filters/Tools (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+  - KSCrashAblyFork/Reporting/MessageUI (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+  - KSCrashAblyFork/Reporting/Sinks (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+    - KSCrashAblyFork/Reporting/Filters
+    - KSCrashAblyFork/Reporting/Tools
+  - KSCrashAblyFork/Reporting/Tools (1.15.20-ably-1):
+    - KSCrashAblyFork/Recording
+  - lottie-ios (3.1.2)
+  - M13Checkbox (3.4.0)
+  - ModelMapper (10.0.0):
+    - ModelMapper/Core (= 10.0.0)
+  - ModelMapper/Core (10.0.0)
+  - MsgPackAblyFork (0.2.0-ably-1)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - Parse (1.17.2):
+    - Parse/Core (= 1.17.2)
+  - Parse/Core (1.17.2):
+    - Bolts/Tasks (~> 1.9)
+  - Protobuf (3.9.0)
+  - SAMKeychain (1.5.3)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - Smooch (6.15.0)
+  - SocketRocketAblyFork (0.5.2-ably-4)
+  - SwiftyTimer (2.1.0)
+  - SwiftyUserDefaults (4.0.0-beta.2)
+  - ULID (1.1.0)
 
 DEPENDENCIES:
-  - Alamofire (= 4.8.2)
+  - Ably (~> 1.1.3)
+  - Alamofire (~> 4.7)
+  - AlamofireNetworkActivityLogger (~> 2.3)
+  - AppCenter
+  - AppCenter/Distribute
+  - Blueprints
+  - BubbleTransition (~> 3.0.0)
+  - Crashlytics (~> 3.12.0)
+  - CurrencyText
+  - Fabric (~> 1.9.0)
+  - Firebase/Core
+  - Firebase/Performance
+  - GMStepper
+  - Heap
+  - Hero
+  - IBAnimatable
+  - JMMaskTextField-Swift
+  - lottie-ios
+  - M13Checkbox
+  - ModelMapper
+  - Parse
+  - SDWebImage
+  - Smooch
+  - SwiftyTimer
+  - SwiftyUserDefaults (= 4.0.0-beta.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Ably
     - Alamofire
+    - AlamofireNetworkActivityLogger
+    - AppCenter
+    - Blueprints
+    - Bolts
+    - BubbleTransition
+    - Crashlytics
+    - CurrencyText
+    - Fabric
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebasePerformance
+    - FirebaseRemoteConfig
+    - GMStepper
+    - GoogleAppMeasurement
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - Heap
+    - Hero
+    - IBAnimatable
+    - JMMaskTextField-Swift
+    - KSCrashAblyFork
+    - lottie-ios
+    - M13Checkbox
+    - ModelMapper
+    - MsgPackAblyFork
+    - nanopb
+    - Parse
+    - Protobuf
+    - SAMKeychain
+    - SDWebImage
+    - Smooch
+    - SocketRocketAblyFork
+    - SwiftyTimer
+    - SwiftyUserDefaults
+    - ULID
 
 SPEC CHECKSUMS:
+  Ably: aa449fb64e1c189b48b3a41501a3dc5fd1df099e
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireNetworkActivityLogger: 6d3398c692d2c5d83b0c58793537860aca1e383d
+  AppCenter: c809e69d93218b9861b4f8e54ded8dcf4d2131e7
+  Blueprints: 65eb7d69c2c60721a28fade0b7e10b0588e4e96d
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  BubbleTransition: 6bdf7d8af460b5c3696beb0adbf4bcb17176ee11
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  CurrencyText: 680e011515edb73f238748d87fc4f760bcfb51a6
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  Firebase: dedc9e48ea3f3649ad5f6b982f8a0c73508a14b5
+  FirebaseABTesting: a32c488eb75089a61eb3d86db061dfb909d765db
+  FirebaseAnalytics: 3fb375bc9d13779add4039716f868d233a473fad
+  FirebaseCore: aecf02fb2274ec361b9bebeac112f5daa18273bd
+  FirebaseInstanceID: 662b8108a09fe9ed01aafdedba100fde8536b0f6
+  FirebasePerformance: bd3666700af4d43caf2a13b93718f3b532b8a5ff
+  FirebaseRemoteConfig: ed74d16d7e5b19e77a4c3e3eee4fe363039b0834
+  GMStepper: 89fb106944dfcc3aa3add7164e3ebd463ea2104b
+  GoogleAppMeasurement: 183bd916af7f80deb67c01888368f1108d641832
+  GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
+  GoogleUtilities: d2b0e277a95962e09bb27f5cd42f5f0b6a506c7d
+  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  Heap: c6cedb34e59b9b588f85361d29096e46551a2093
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
+  JMMaskTextField-Swift: 16aa552605b121285e6c2f0817ab31cea5f4704b
+  KSCrashAblyFork: e58ed6ba92e08e6a8a6ad601077495ef21a233b7
+  lottie-ios: 49cd85b1f24f61a7708ad7ec76a523ab2d0e3100
+  M13Checkbox: 6f59404540ac98ba83a3d1afac335895a40c6a5d
+  ModelMapper: a8dbf2a2003bf626627b9fe7c9a22b3405a30404
+  MsgPackAblyFork: 42dc34f3bd458b57de28341351e89f7c73393207
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Parse: 3b31a3dd1777b07ee7f0caee32fafbff544483a5
+  Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  Smooch: 2d4b3e1e38674b8d78cf452ed4bac9ab6c0a40af
+  SocketRocketAblyFork: ed717517ed5cb5217878987c84bc415890582bb3
+  SwiftyTimer: 02dd6cf10cbc71cbf67cec494f6e5eb782102543
+  SwiftyUserDefaults: 39ec70433f22f3052a64bc5fbfb34f46932b8bf1
+  ULID: b4714891a02819364faecd574a53e391c4c6de9d
 
-PODFILE CHECKSUM: f9a763e971a57179dbd966f10245d9bbdbc96651
+PODFILE CHECKSUM: e09b87c77a8b8c355f01ace192282366e5ef2443
 
 COCOAPODS: 1.7.2

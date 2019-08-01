@@ -117,7 +117,7 @@ extension AppViewController: ManualAuthorizationViewControllerDelegate {
             "Content-Type":"application/json",
         ]
 
-        let accessToken: String? = <# REPLACE ME #>
+        
 
         let body: [String : Any] = [
             "accessToken": accessToken

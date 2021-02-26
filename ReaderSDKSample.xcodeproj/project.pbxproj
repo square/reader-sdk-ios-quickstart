@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,8 +19,8 @@
 		03FF148420BDBBFC0085C8D1 /* SquareLogoAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF148320BDBBFC0085C8D1 /* SquareLogoAnimationViewController.swift */; };
 		03FF148620BDD1680085C8D1 /* ChooseAuthorizationMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF148520BDD1680085C8D1 /* ChooseAuthorizationMethodViewController.swift */; };
 		2E045807228DD57C00B3F5F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E045809228DD57C00B3F5F3 /* Localizable.strings */; };
-		2EE2A8F422933E1D006D5B6C /* SquareReaderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE2A8F322933E1D006D5B6C /* SquareReaderSDK.framework */; };
-		2EE2A8F522933E1D006D5B6C /* SquareReaderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE2A8F322933E1D006D5B6C /* SquareReaderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2EF95E9625E95524001421CC /* SquareReaderSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF95E9525E95524001421CC /* SquareReaderSDK.xcframework */; };
+		2EF95E9725E95524001421CC /* SquareReaderSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF95E9525E95524001421CC /* SquareReaderSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		403FAA6420A38CD900829AE4 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403FAA6320A38CD900829AE4 /* SampleApp.swift */; };
 		40BB4CA520A38735002D3C8E /* PermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4CA420A38735002D3C8E /* PermissionsViewController.swift */; };
 		40BBFA9020A21EAE00D3A5FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBFA8F20A21EAE00D3A5FF /* AppDelegate.swift */; };
@@ -37,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2EE2A8F522933E1D006D5B6C /* SquareReaderSDK.framework in Embed Frameworks */,
+				2EF95E9725E95524001421CC /* SquareReaderSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		2E04580B228DD5E300B3F5F3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2E68C42622932AAE002407A7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2E68C42722932AAE002407A7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2EE2A8F322933E1D006D5B6C /* SquareReaderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SquareReaderSDK.framework; sourceTree = "<group>"; };
+		2EF95E9525E95524001421CC /* SquareReaderSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SquareReaderSDK.xcframework; sourceTree = "<group>"; };
 		403FAA6320A38CD900829AE4 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 		40BB4CA420A38735002D3C8E /* PermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsViewController.swift; sourceTree = "<group>"; };
 		40BBFA8C20A21EAE00D3A5FF /* ReaderSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EE2A8F422933E1D006D5B6C /* SquareReaderSDK.framework in Frameworks */,
+				2EF95E9625E95524001421CC /* SquareReaderSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +134,7 @@
 		201E1E1F133519C0F926D59B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EF95E9525E95524001421CC /* SquareReaderSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,7 +142,6 @@
 		40BBFA8320A21EAE00D3A5FF = {
 			isa = PBXGroup;
 			children = (
-				2EE2A8F322933E1D006D5B6C /* SquareReaderSDK.framework */,
 				03129ABC20A605E000AEDF4E /* README.md */,
 				40BBFA8E20A21EAE00D3A5FF /* ReaderSDKSample */,
 				40BBFA8D20A21EAE00D3A5FF /* Products */,
@@ -416,7 +416,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -435,7 +436,10 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderSDKSample/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.squareup.ReaderSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -458,7 +462,10 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/ReaderSDKSample/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.squareup.ReaderSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

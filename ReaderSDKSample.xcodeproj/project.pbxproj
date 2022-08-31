@@ -19,8 +19,8 @@
 		03FF148420BDBBFC0085C8D1 /* SquareLogoAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF148320BDBBFC0085C8D1 /* SquareLogoAnimationViewController.swift */; };
 		03FF148620BDD1680085C8D1 /* ChooseAuthorizationMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF148520BDD1680085C8D1 /* ChooseAuthorizationMethodViewController.swift */; };
 		2E045807228DD57C00B3F5F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E045809228DD57C00B3F5F3 /* Localizable.strings */; };
-		2EF95E9625E95524001421CC /* SquareReaderSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF95E9525E95524001421CC /* SquareReaderSDK.xcframework */; };
-		2EF95E9725E95524001421CC /* SquareReaderSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF95E9525E95524001421CC /* SquareReaderSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2ED6523C28BFED2700666FA0 /* SquareReaderSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED6523B28BFED2700666FA0 /* SquareReaderSDK.xcframework */; };
+		2ED6523D28BFED2700666FA0 /* SquareReaderSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED6523B28BFED2700666FA0 /* SquareReaderSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		403FAA6420A38CD900829AE4 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403FAA6320A38CD900829AE4 /* SampleApp.swift */; };
 		40BB4CA520A38735002D3C8E /* PermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB4CA420A38735002D3C8E /* PermissionsViewController.swift */; };
 		40BBFA9020A21EAE00D3A5FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBFA8F20A21EAE00D3A5FF /* AppDelegate.swift */; };
@@ -37,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2EF95E9725E95524001421CC /* SquareReaderSDK.xcframework in Embed Frameworks */,
+				2ED6523D28BFED2700666FA0 /* SquareReaderSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		2E04580B228DD5E300B3F5F3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2E68C42622932AAE002407A7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2E68C42722932AAE002407A7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2EF95E9525E95524001421CC /* SquareReaderSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SquareReaderSDK.xcframework; sourceTree = "<group>"; };
+		2ED6523B28BFED2700666FA0 /* SquareReaderSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SquareReaderSDK.xcframework; path = Scripts/SquareReaderSDK.xcframework; sourceTree = "<group>"; };
 		403FAA6320A38CD900829AE4 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 		40BB4CA420A38735002D3C8E /* PermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsViewController.swift; sourceTree = "<group>"; };
 		40BBFA8C20A21EAE00D3A5FF /* ReaderSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EF95E9625E95524001421CC /* SquareReaderSDK.xcframework in Frameworks */,
+				2ED6523C28BFED2700666FA0 /* SquareReaderSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +134,7 @@
 		201E1E1F133519C0F926D59B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EF95E9525E95524001421CC /* SquareReaderSDK.xcframework */,
+				2ED6523B28BFED2700666FA0 /* SquareReaderSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,11 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40BBFA9E20A21EAE00D3A5FF /* Build configuration list for PBXNativeTarget "ReaderSDKSample" */;
 			buildPhases = (
+				2E4A909B28BFDB1900F55024 /* Download Reader SDK */,
 				40BBFA8820A21EAE00D3A5FF /* Sources */,
 				40BBFA8920A21EAE00D3A5FF /* Frameworks */,
 				40BBFA8A20A21EAE00D3A5FF /* Resources */,
 				03FF148F20BDEF510085C8D1 /* Embed Frameworks */,
-				40C42D2220A23AF4007A314D /* ShellScript */,
+				40C42D2220A23AF4007A314D /* Reader SDK Setup Script */,
 			);
 			buildRules = (
 			);
@@ -243,18 +244,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		40C42D2220A23AF4007A314D /* ShellScript */ = {
+		2E4A909B28BFDB1900F55024 /* Download Reader SDK */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Download Reader SDK";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "./Scripts/download-squarereader.sh\n";
+		};
+		40C42D2220A23AF4007A314D /* Reader SDK Setup Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Reader SDK Setup Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/SquareReaderSDK.framework/setup";
+			shellScript = "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/SquareReaderSDK.framework/setup\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

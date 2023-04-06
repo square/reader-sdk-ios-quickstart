@@ -1,6 +1,6 @@
 # Reader SDK Quick Start Sample iOS App
 
-Follow the Reader SDK [Quick Start Guide](https://docs.connect.squareup.com/payments/readersdk/quickstart) to start taking cash and credit card payments with Reader SDK.
+Follow the Reader SDK [Quick Start Guide](https://developer.squareup.com/docs/reader-sdk/quick-start/start) to start taking cash and credit card payments with Reader SDK.
 
 ## License
 
